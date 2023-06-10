@@ -50,7 +50,7 @@ function getExchangeRate(){
     const amount = document.querySelector("form input");
     const exchangeRateTxt = document.querySelector("form .exchange-rate");
     let amountVal = amount.value;
-    // if user don't enter any value or enter 0 then we'll put 1 value by default in the input field
+    // if user don't enter any value or enter 0 then i'll put 1 value by default in the input field
     if(amountVal == "" || amountVal == "0"){
         amount.value = "1";
         amountVal = 1;
