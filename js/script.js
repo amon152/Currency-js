@@ -9,7 +9,7 @@ for (let i = 0; i < dropList.length; i++) {
         let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "NPR" ? "selected" : "";
         // creating option tag with passing currency code as a text and value
         let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
-        // inserting options tag inside select tag
+       
         dropList[i].insertAdjacentHTML("beforeend", optionTag);
     }
     dropList[i].addEventListener("change", e =>{
